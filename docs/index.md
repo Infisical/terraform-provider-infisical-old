@@ -17,5 +17,5 @@ Interact with infisical.
 
 ### Optional
 
-- `api_key` (String, Sensitive) Username for infisical API. May also be provided via INFISICAL_API_KEY environment variable.
+- `api_token` (String, Sensitive) Username for infisical API. May also be provided via INFISICAL_API_TOKEN environment variable.
 - `host` (String) URI for infisical API. May also be provided via INFISICAL_HOST environment variable.

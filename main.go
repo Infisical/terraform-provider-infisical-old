@@ -5,7 +5,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 
-	"github.com/asheliahut/terraform-provider-infisical/infisical"
+	"github.com/asheliahut/terraform-provider-infisical/provider"
 )
 
 // Provider http client generation.
@@ -14,7 +14,7 @@ import (
 // Provider documentation generation.
 //go:generate go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs generate --provider-name infisical
 func main() {
-	providerserver.Serve(context.Background(), infisical.New, providerserver.ServeOpts{
+	providerserver.Serve(context.Background(), provider.New, providerserver.ServeOpts{
 		Address: "registry.terraform.io/infisical/infisical",
 	})
 }

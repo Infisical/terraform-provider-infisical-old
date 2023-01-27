@@ -36,7 +36,7 @@ data "infisical_organizations" "all" {}
 
 ### Read-Only
 
-- `id` (String) Placeholder identifier attribute.
+- `id` (String) Current Unix timestamp for id.
 - `organizations` (Attributes List) List of organizations. (see [below for nested schema](#nestedatt--organizations))
 
 <a id="nestedatt--organizations"></a>
@@ -44,10 +44,7 @@ data "infisical_organizations" "all" {}
 
 Read-Only:
 
-- `created_at` (String) Date of creation for the organization.
 - `id` (String) Identifier of the organization.
 - `name` (String) Name of the organization.
-- `updated_at` (String) Last updated date of the organization.
-- `v` (Number) Version of the organization.
 
 
